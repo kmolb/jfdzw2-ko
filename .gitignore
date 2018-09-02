@@ -1,0 +1,9 @@
+# ignore generated css files,
+    
+*.css
+   
+
+
+# ignore vscode dir,
+    
+.vscode/
