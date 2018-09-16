@@ -1,0 +1,28 @@
+.c-article {
+  flex: 0 0 50%;
+  &__header {
+    font-size: 14px;
+    display: flex;
+  }
+
+  &__image {
+    color: black;
+  }
+
+  &__lead {
+    color: black;
+  }
+
+  &__content {
+    color: black;
+  }
+  &__meta {
+    display: flex;
+
+    flex-wrap: wrap-reverse;
+
+    margin: auto;
+
+    padding: 10px 10px;
+  }
+}

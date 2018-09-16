@@ -1,0 +1,19 @@
+.c-testimonial {
+    background: $color5;
+    padding: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+
+  &__image {
+      color: $color2;
+  }
+
+  &__desc {
+      color:rgb(173, 173, 173);
+      font-style: italic;
+      font-size: $font3;
+      display: flex;
+      padding: 10px;
+      
+  }
+}

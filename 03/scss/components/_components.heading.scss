@@ -1,0 +1,14 @@
+.c-heading {
+  &--primary {
+     
+      font-size: 20px;
+      padding: 10px;
+      font-weight: bold;
+  }
+
+  &--secondary {
+      color: $color6;
+      font-size: 16px;
+      padding: 10px;
+  }
+}

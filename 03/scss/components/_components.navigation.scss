@@ -1,0 +1,22 @@
+.c-navigation {
+  background: $color4;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  flex: 0 0 45%;
+
+  &__list {
+    color: blue;
+    list-style-type: none;
+    display: flex;
+
+  }
+
+  &__item {
+    color: black;
+  }
+
+  &__link {
+    color: black;
+  }
+}

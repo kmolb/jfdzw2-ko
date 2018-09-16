@@ -1,0 +1,21 @@
+.o-image {
+    background: $color4;
+    padding: 10px;
+    
+  &__pic {
+      color: black;
+      width: 80px;
+  }
+
+  &__desc {
+      font-size: $font2;
+  }
+
+  &--rounded {
+     
+  }
+
+  &--centered {
+    
+  }
+}
