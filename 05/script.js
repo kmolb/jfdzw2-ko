@@ -6,43 +6,52 @@ function add(a, b) {
 
   // zad 1.// evenOrdd
 
-  function evenOrdd(){
+  function evenOrOdd(n){
+    if (n%2 == 0) return 'even';
+    else return 'odd'; 
+}
+//  zad 2.
+
+function previousAndNext(n){
+  return{
+    previous:n-1,
+    next:n+1,
+  }
 }
 
-var n = 1; {
-  if (n%2 == 0) console.log('even'); 
-  else console.log('odd'); 
-}
+// zad 3.
+
 // zad 4. // swapVariables
-
-var x = 1,
-    y = 2;
-
-[x, y] = [y, x];
-
-console.log('x:', x, 'y:', y);
-
-
-// zad 6. // areNumbersDescending
-
-var arr = [10,44,32, 100, 2]; 
-
-arr.sort(function areNumbersDescending(a,b){
-return b - a; 
-});
-console.log( arr);
-
-
-
   
   // funkcja została zadeklarowana ze względu na testy
   // nic nie zmieniaj; dodaj jedynie implementację zamiany zmiennych
   function swapVariables(first, second) { // nie zmieniaj kolejności ani nazw
-    // tytaj implementacja
-  
+    const first2 = first,
+    first = second,
+    second = first2,
+
     swapVariablesCalled(first, second); // tego nie ruszaj
   }
   
+  /// zad 5.
+
+  function minOfThreeNumbers(x,y,z){
+    if (x < y && x <z){
+      return x;
+    }
+    else {
+      if (y <z){
+        return y;
+      }
+    else{
+      return z;
+    }
+    }
+
+  }
+
+
+
   // TESTY
   function tests(a) { let b = 0; for (let c in a) { let d = a[c]; try { d(), console.log('Test:', c, 'OK') } catch (f) { b++ , console.error('Test:', c, 'FAILED', f), console.error(f.stack) } } } function fail(a) { throw new Error('fail(): ' + a) } function assert(a, b) { if (!a) throw new Error('assert(): ' + b) } function assertEquals(a, b) { if (a != b) throw new Error('assertEquals() "' + a + '" != "' + b + '"') } function assertStrictEquals(a, b) { if (a !== b) throw new Error('assertStrictEquals() "' + a + '" !== "' + b + '"') }
   function range(a, b) {
